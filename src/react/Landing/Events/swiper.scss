@@ -27,7 +27,7 @@
 	transform: translateX(calc(-100% - 20px));
 
 	&::before {
-		content: '🠘';
+		content: '\1F850';
 		transform: translate(-5%, -0%);
 		color: $black;
 		font-size: 0.8em;
@@ -36,7 +36,7 @@
 
 .swiper-button-next {
 	&::before {
-		content: '🠚';
+		content: '\1F852';
 		transform: translate(5%, -0%);
 		color: $black;
 		font-size: 0.8em;
