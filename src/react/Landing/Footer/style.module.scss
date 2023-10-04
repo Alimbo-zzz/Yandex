@@ -1,7 +1,7 @@
 .footer {
 	color: $gray;
 	font-size: 13px;
-	padding: 6em 0;
+	padding-bottom: 6em;
 
 	a {
 		text-decoration: underline;
@@ -12,6 +12,7 @@
 	@media(max-width: $phone) {
 		font-size: 10px;
 		padding: 3em 0;
-		padding-bottom: 0;
+		padding-bottom: 12em;
+		margin-top: -6em;
 	}
 }
