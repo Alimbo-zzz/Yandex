@@ -48,6 +48,16 @@
 		z-index: -1;
 		width: 850px;
 
+		[data-name='circle'] {
+			position: absolute;
+			bottom: -13%;
+			left: 31%;
+			width: 18%;
+			animation: rotate 15s 0s linear infinite;
+
+		}
+
+
 		@media(max-width: $desktop) {
 			width: 700px;
 			transform: translate(0%, -14%);
@@ -150,5 +160,18 @@
 			padding: 6px 10px;
 			text-decoration: line-through;
 		}
+	}
+}
+
+
+
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
 	}
 }

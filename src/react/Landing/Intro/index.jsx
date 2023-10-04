@@ -2,6 +2,7 @@ import React from 'react';
 import cls from './style.module.scss';
 import main_img from '@images/main.png';
 import logo_svg from '@icons/logo.svg';
+import circle_svg from '@icons/circle.svg';
 
 function Intro(props) {
 
@@ -26,6 +27,7 @@ function Intro(props) {
 					<div className={cls.intro__image}>
 						<div className={cls.intro__decor2} />
 						<img src={main_img} data-name='main' />
+						<img src={circle_svg} data-name='circle' />
 					</div>
 				</div>
 			</div>
