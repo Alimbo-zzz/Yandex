@@ -86,13 +86,15 @@
 	}
 
 
-	a {
-		position: fixed;
-		left: 50%;
-		transform: translateX(-50%);
-		width: auto;
-		white-space: nowrap;
-		z-index: 30;
-		bottom: 30px;
+	@media(max-width: $phone) {
+		a {
+			position: fixed;
+			left: 50%;
+			transform: translateX(-50%);
+			width: auto;
+			white-space: nowrap;
+			z-index: 30;
+			bottom: 30px;
+		}
 	}
 }
