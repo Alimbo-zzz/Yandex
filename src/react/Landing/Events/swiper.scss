@@ -1,0 +1,44 @@
+.swiper {
+	overflow: visible;
+	position: relative;
+
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		bottom: -90px;
+		top: auto;
+		left: 50%;
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	background: $yellow;
+	color: $black;
+	font-size: 3em;
+
+	min-width: 1em;
+	min-height: 1em;
+	border-radius: 50%;
+	aspect-ratio: 1/1;
+}
+
+.swiper-button-prev {
+	transform: translateX(calc(-100% - 20px));
+
+	&::before {
+		content: '🠘';
+		transform: translate(-5%, -0%);
+		color: $black;
+		font-size: 0.8em;
+	}
+}
+
+.swiper-button-next {
+	&::before {
+		content: '🠚';
+		transform: translate(5%, -0%);
+		color: $black;
+		font-size: 0.8em;
+	}
+}

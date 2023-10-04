@@ -1,0 +1,27 @@
+body {
+	min-width: $min-width;
+}
+
+.container {
+	max-width: $desktop;
+	width: calc(100% - 36px);
+	margin: 0 auto;
+
+
+	@media(max-width: $desktop) {
+		max-width: $laptop;
+	}
+
+	@media(max-width: $laptop) {
+		max-width: $tablet;
+	}
+
+	@media(max-width: $tablet) {
+		max-width: $phone;
+	}
+
+	@media(max-width: $phone) {
+		max-width: $min-width;
+	}
+
+}

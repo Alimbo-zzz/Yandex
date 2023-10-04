@@ -1,0 +1,154 @@
+.intro {
+	margin-bottom: 6em;
+
+	@media(max-width: $phone) {
+		margin-bottom: 0;
+	}
+
+
+	&__grid {
+		display: flex;
+		position: relative;
+
+		@media(max-width: $phone) {
+			flex-direction: column;
+			gap: 1em;
+		}
+	}
+
+	&__content {
+		max-width: 500px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2em;
+
+		@media(max-width: $laptop) {
+			max-width: 400px;
+		}
+	}
+
+	@media(max-width: $phone) {
+		a {
+			display: none;
+		}
+	}
+
+	img[data-name='logo'] {
+		width: 200px;
+	}
+
+	img[data-name='main'] {}
+
+	&__image {
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: translate(-4%, -14%);
+		z-index: -1;
+		width: 850px;
+
+		@media(max-width: $desktop) {
+			width: 700px;
+			transform: translate(0%, -14%);
+		}
+
+		@media(max-width: $laptop) {
+			width: 550px;
+			transform: translate(0%, -14%);
+		}
+
+		@media(max-width: $tablet) {
+			width: calc($min-width - 10px);
+			transform: translate(20%, -10%);
+		}
+
+		@media(max-width: $phone) {
+			position: relative;
+			transform: translateX(-5%);
+		}
+
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			user-select: none;
+			pointer-events: none;
+		}
+	}
+
+
+
+
+	&__decor1 {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -5;
+		background: $pink;
+		width: 70vw;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		opacity: 0.4;
+		filter: blur(100px);
+		transform: translate(-50%, -50%);
+	}
+
+	&__decor2 {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(30deg);
+		z-index: -2;
+		background: $grad-1;
+		width: 110%;
+		aspect-ratio: 4/2;
+		border-radius: 50%;
+		filter: blur(60px);
+	}
+
+	&__decor3 {
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%);
+		z-index: -2;
+		background: $grad-1;
+		width: 70%;
+		aspect-ratio: 1/2;
+		border-radius: 50%;
+		filter: blur(60px);
+
+		@media(min-width: $phone) {
+			display: none;
+		}
+	}
+
+
+
+
+	[data-name='cell'] {
+		background: $fiolet-light;
+		border-radius: 100px;
+		overflow: hidden;
+		padding: 4px 10px;
+		padding-left: 0;
+		margin-left: 1em;
+
+		[data-name='now'] {
+			font-weight: 500;
+			background: $grad-1;
+			border-radius: inherit;
+			overflow: hidden;
+			padding: 4px 10px;
+		}
+
+		[data-name='old'] {
+			font-size: 0.8em;
+			font-weight: 500;
+			padding: 6px 10px;
+			text-decoration: line-through;
+		}
+	}
+}

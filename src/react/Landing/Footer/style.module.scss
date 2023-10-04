@@ -1,0 +1,17 @@
+.footer {
+	color: $gray;
+	font-size: 13px;
+	padding: 6em 0;
+
+	a {
+		text-decoration: underline;
+		color: inherit;
+	}
+
+
+	@media(max-width: $phone) {
+		font-size: 10px;
+		padding: 3em 0;
+		padding-bottom: 0;
+	}
+}
